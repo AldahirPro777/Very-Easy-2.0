@@ -1,0 +1,132 @@
+[
+    {
+      "title": "Tarea de Álgebra",
+      "descripcion": "Resolver los ejercicios 5, 6 y 7 del libro de texto.",
+      "materia": "Matemáticas",
+      "date": "2024-09-01T10:00:00Z",
+      "teacher": "Prof. Martínez",
+      "resourceUrls": [
+        "https://www.ejemplo.com/algebra/ejercicios",
+        "https://www.ejemplo.com/algebra/soluciones"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["álgebra", "ejercicios"]
+    },
+    {
+      "title": "Ensayo sobre la Revolución Francesa",
+      "descripcion": "Escribir un ensayo de 1500 palabras.",
+      "materia": "Historia",
+      "date": "2024-09-03T12:00:00Z",
+      "teacher": "Prof. Gómez",
+      "resourceUrls": [
+        "https://www.ejemplo.com/historia/revolucionfrancesa"
+      ],
+      "importanceLevel": "Media",
+      "tags": ["ensayo", "revolución francesa"]
+    },
+    {
+      "title": "Proyecto de ciencias",
+      "descripcion": "Construir un volcán de bicarbonato.",
+      "materia": "Ciencias Naturales",
+      "date": "2024-09-05T08:00:00Z",
+      "teacher": "Prof. Ruiz",
+      "resourceUrls": [
+        "https://www.ejemplo.com/ciencias/volcan",
+        "https://www.ejemplo.com/ciencias/bicarbonato"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["proyecto", "volcán"]
+    },
+    {
+      "title": "Práctica de laboratorio: Fotosíntesis",
+      "descripcion": "Realizar el experimento sobre fotosíntesis.",
+      "materia": "Biología",
+      "date": "2024-09-10T09:00:00Z",
+      "teacher": "Prof. Hernández",
+      "resourceUrls": [
+        "https://www.ejemplo.com/biologia/fotosintesis",
+        "https://www.ejemplo.com/biologia/practica"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["laboratorio", "fotosíntesis"]
+    },
+    {
+      "title": "Lectura: Don Quijote de la Mancha",
+      "descripcion": "Leer los capítulos 1 al 5 de Don Quijote.",
+      "materia": "Literatura",
+      "date": "2024-09-07T14:00:00Z",
+      "teacher": "Prof. López",
+      "resourceUrls": [
+        "https://www.ejemplo.com/literatura/quijote",
+        "https://www.ejemplo.com/literatura/capitulos"
+      ],
+      "importanceLevel": "Media",
+      "tags": ["lectura", "Don Quijote"]
+    },
+    {
+      "title": "Examen de trigonometría",
+      "descripcion": "Prepararse para el examen de trigonometría.",
+      "materia": "Matemáticas",
+      "date": "2024-09-12T07:00:00Z",
+      "teacher": "Prof. Ortega",
+      "resourceUrls": [
+        "https://www.ejemplo.com/matematicas/trigonometria",
+        "https://www.ejemplo.com/matematicas/examen"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["examen", "trigonometría"]
+    },
+    {
+      "title": "Tarea de química: Reacciones químicas",
+      "descripcion": "Completar los ejercicios de reacciones químicas.",
+      "materia": "Química",
+      "date": "2024-09-09T11:00:00Z",
+      "teacher": "Prof. Fernández",
+      "resourceUrls": [
+        "https://www.ejemplo.com/quimica/reacciones",
+        "https://www.ejemplo.com/quimica/ejercicios"
+      ],
+      "importanceLevel": "Media",
+      "tags": ["química", "reacciones"]
+    },
+    {
+      "title": "Mapa conceptual sobre ecosistemas",
+      "descripcion": "Crear un mapa conceptual sobre los diferentes tipos de ecosistemas.",
+      "materia": "Geografía",
+      "date": "2024-09-11T13:00:00Z",
+      "teacher": "Prof. Castro",
+      "resourceUrls": [
+        "https://www.ejemplo.com/geografia/ecosistemas",
+        "https://www.ejemplo.com/geografia/mapaconceptual"
+      ],
+      "importanceLevel": "Media",
+      "tags": ["mapa conceptual", "ecosistemas"]
+    },
+    {
+      "title": "Debate sobre el cambio climático",
+      "descripcion": "Preparar argumentos para el debate sobre cambio climático.",
+      "materia": "Ciencias Sociales",
+      "date": "2024-09-13T10:00:00Z",
+      "teacher": "Prof. Pérez",
+      "resourceUrls": [
+        "https://www.ejemplo.com/sociales/cambioclimatico",
+        "https://www.ejemplo.com/sociales/debate"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["debate", "cambio climático"]
+    },
+    {
+      "title": "Exposición sobre la evolución",
+      "descripcion": "Preparar una presentación sobre la teoría de la evolución.",
+      "materia": "Biología",
+      "date": "2024-09-15T10:00:00Z",
+      "teacher": "Prof. Díaz",
+      "resourceUrls": [
+        "https://www.ejemplo.com/biologia/evolucion",
+        "https://www.ejemplo.com/biologia/presentacion"
+      ],
+      "importanceLevel": "Alta",
+      "tags": ["exposición", "evolución"]
+    }
+  ]
+  

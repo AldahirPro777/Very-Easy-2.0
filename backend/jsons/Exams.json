@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Examen de Biología",
+    "materia": "Biología",
+    "date": "2024-09-22T08:30:00.000Z",
+    "teacher": "Prof. Hernández",
+    "resourceUrls": ["https://biologia.com/guia"],
+    "importanceLevel": "Alta",
+    "tags": ["biología", "examen"],
+    "studyGuideUrls": ["https://biologia.com/guiaestudio"],
+    "isFixed": true
+  },
+  {
+    "title": "Examen de Historia",
+    "materia": "Historia",
+    "date": "2024-09-28T09:00:00.000Z",
+    "teacher": "Prof. Ortega",
+    "resourceUrls": ["https://historia.com/temas"],
+    "importanceLevel": "Media",
+    "tags": ["historia", "evaluación"],
+    "studyGuideUrls": [],
+    "isFixed": false
+  },
+  {
+    "title": "Examen de Química",
+    "materia": "Química",
+    "date": "2024-10-05T10:00:00.000Z",
+    "teacher": "Prof. Martínez",
+    "resourceUrls": ["https://quimica.com/temario"],
+    "importanceLevel": "Alta",
+    "tags": ["química", "examen"],
+    "studyGuideUrls": ["https://quimica.com/guiaexamen"],
+    "isFixed": true
+  }
+]

@@ -1,0 +1,58 @@
+#calendarAux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#calendarAux .container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#calendarAux .container .tabla {
+  margin-bottom: 50px;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 20px 0;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 700px;
+}
+#calendarAux .container .tabla h3 {
+  margin-bottom: 20px;
+  font-size: 6vw;
+}
+#calendarAux .container .tabla ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#calendarAux .container .tabla ol li {
+  padding: 5px;
+}
+#calendarAux .container .tabla ol li:hover {
+  background-color: #fff;
+}
+#calendarAux .container .tabla .firts-day {
+  grid-column-start: 3;
+}
+#calendarAux .container .tabla .day-name {
+  background-color: #fff;
+  font-weight: 600;
+}
+#calendarAux .container .simbologia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 300px;
+  margin: 0 auto;
+}
+#calendarAux .container .simbologia h3 {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=calendarAux.css.map */

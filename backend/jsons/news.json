@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Nueva Política Escolar",
+    "date": "2024-09-20T08:00:00.000Z",
+    "autor": "Dirección Escolar",
+    "description": "Se han implementado nuevas políticas para el uso de dispositivos electrónicos en clase.",
+    "importanceLevel": "Alta",
+    "fuente": "Dirección Escolar",
+    "archivosAdjuntos": ["politica_escolar.pdf"],
+    "isFixed": true
+  },
+  {
+    "title": "Evento de Ciencia",
+    "date": "2024-09-25T10:30:00.000Z",
+    "autor": "Club de Ciencia",
+    "description": "Se realizará un evento de ciencia con exhibiciones y experimentos en el auditorio principal.",
+    "importanceLevel": "Media",
+    "fuente": "Club de Ciencia",
+    "archivosAdjuntos": [],
+    "isFixed": false
+  },
+  {
+    "title": "Cambio de Horario",
+    "date": "2024-10-01T12:00:00.000Z",
+    "autor": "Administración",
+    "description": "A partir del próximo mes, se modificará el horario de las clases los días viernes.",
+    "importanceLevel": "Alta",
+    "fuente": "Administración",
+    "archivosAdjuntos": ["nuevo_horario.pdf"],
+    "isFixed": true
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Proyecto de Historia",
+    "descripcion": "Investigar sobre las culturas prehispánicas y realizar una presentación.",
+    "materia": "Historia",
+    "date": "2024-09-30T09:00:00.000Z",
+    "teacher": "Prof. López",
+    "resourceUrls": ["https://recursos.historia.com/culturas"],
+    "importanceLevel": "Alta",
+    "tags": ["historia", "investigación"],
+    "isFixed": true
+  },
+  {
+    "title": "Proyecto de Física",
+    "descripcion": "Construir un modelo de puente utilizando principios de resistencia de materiales.",
+    "materia": "Física",
+    "date": "2024-10-15T14:00:00.000Z",
+    "teacher": "Prof. Ramírez",
+    "resourceUrls": [],
+    "importanceLevel": "Media",
+    "tags": ["física", "proyecto"],
+    "isFixed": false
+  },
+  {
+    "title": "Proyecto de Arte",
+    "descripcion": "Crear una obra de arte inspirada en movimientos del siglo XX.",
+    "materia": "Arte",
+    "date": "2024-11-01T11:30:00.000Z",
+    "teacher": "Prof. García",
+    "resourceUrls": ["https://arte.moderno.com/recursos"],
+    "importanceLevel": "Baja",
+    "tags": ["arte", "creatividad"],
+    "isFixed": false
+  }
+]

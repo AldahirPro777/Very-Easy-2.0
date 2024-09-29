@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Tarea de Matemáticas",
+    "descripcion": "Resolver problemas de álgebra en el cuaderno.",
+    "materia": "Matemáticas",
+    "date": "2024-09-21T08:00:00.000Z",
+    "teacher": "Prof. Pérez",
+    "resourceUrls": ["https://matematicas.com/ejercicios"],
+    "importanceLevel": "Alta",
+    "tags": ["álgebra", "matemáticas"],
+    "isFixed": true
+  },
+  {
+    "title": "Tarea de Inglés",
+    "descripcion": "Escribir un ensayo sobre la cultura anglosajona.",
+    "materia": "Inglés",
+    "date": "2024-09-25T10:00:00.000Z",
+    "teacher": "Prof. Smith",
+    "resourceUrls": [],
+    "importanceLevel": "Media",
+    "tags": ["ensayo", "cultura"],
+    "isFixed": false
+  },
+  {
+    "title": "Tarea de Química",
+    "descripcion": "Realizar un experimento simple y documentar los resultados.",
+    "materia": "Química",
+    "date": "2024-09-27T12:00:00.000Z",
+    "teacher": "Prof. Martínez",
+    "resourceUrls": ["https://quimica.com/experimentos"],
+    "importanceLevel": "Alta",
+    "tags": ["experimento", "química"],
+    "isFixed": false
+  }
+]
