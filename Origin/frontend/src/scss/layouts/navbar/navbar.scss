@@ -1,0 +1,140 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 1.3rem 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  .blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+  }
+
+  .a-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    a {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #fff;
+      transition: all 300ms ease;
+    }
+
+    a:hover {
+      font-size: 1.3rem;
+      color: cornflowerblue;
+      cursor: pointer;
+      text-decoration: underline;
+      text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    a:active {
+      transition: all 100ms ease;
+      scale: 0.9;
+    }
+  }
+
+  #check {
+    display: none;
+  }
+
+  .icons {
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+
+    #close-icon, #menu-icon {
+      width: 40px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .header {
+      padding: 1.3rem 5%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .icons {
+      display: inline-flex;
+
+      #close-icon {
+        display: none;
+      }
+    }
+
+    #check:checked ~ {
+      .icons {
+        #menu-icon {
+          display: none;
+        }
+
+        #close-icon {
+          display: block;
+        }
+      }
+
+      nav {
+        height: 350px;
+        width: 300px;
+        background: rgba(9, 9, 9, 0.55);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        left: 32px;
+        right: 32px;
+        width: unset;
+        backdrop-filter: blur(25px);
+      }
+    }
+
+    nav {
+      position: absolute;
+      top: 130%;
+      left: 0;
+      height: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(25px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      transition: all 300ms ease;
+      overflow: hidden;
+
+      a {
+        display: block;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

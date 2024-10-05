@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Introducción a React",
+    "description": "Un curso básico de React que cubre los fundamentos de esta biblioteca de JavaScript.",
+    "type": "Curso",
+    "url": ["https://reactjs.org/tutorial/tutorial.html"],
+    "tags": ["React", "JavaScript", "Frontend", "Biblioteca"]
+  },
+  {
+    "title": "Documentación de MongoDB",
+    "description": "La guía oficial de MongoDB para aprender cómo interactuar con bases de datos NoSQL.",
+    "type": "Documentación",
+    "url": ["https://docs.mongodb.com/"],
+    "tags": ["MongoDB", "Bases de datos", "Backend", "NoSQL"]
+  },
+  {
+    "title": "Cómo usar Axios",
+    "description": "Un artículo detallado sobre cómo usar Axios para realizar peticiones HTTP desde el frontend.",
+    "type": "Artículo",
+    "url": ["https://axios-http.com/docs/intro"],
+    "tags": ["Axios", "HTTP", "Frontend", "JavaScript"]
+  },
+  {
+    "title": "CSS Flexbox Guide",
+    "description": "Guía completa sobre cómo utilizar Flexbox para crear layouts en CSS.",
+    "type": "Guía",
+    "url": [
+      "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+      "https://www.youtube.com/watch?v=DHvZLI7Db8E",
+      "https://www.youtube.com/watch?v=DHvZLI7Db8E"
+    ],
+    "tags": ["CSS", "Frontend", "Flexbox", "Layout"]
+  },
+  {
+    "title": "Video sobre Promesas en JavaScript",
+    "description": "Un video que explica de manera sencilla cómo funcionan las promesas en JavaScript.",
+    "type": "Video",
+    "url": [
+      "https://www.youtube.com/watch?v=DHvZLI7Db8E",
+      "https://www.youtube.com/watch?v=DHvZLI7Db8E"
+    ],
+    "tags": ["JavaScript", "Promesas", "Async", "Video"]
+  }
+]

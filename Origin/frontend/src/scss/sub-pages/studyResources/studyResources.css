@@ -1,0 +1,64 @@
+#studyResources {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("../../../assets/sub-pages/studyResources/fondo2.1.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+}
+#studyResources h1 {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+}
+#studyResources .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#studyResources .card {
+  width: 375px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid #000;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+#studyResources .card .card-head {
+  border-bottom: 2px solid #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#studyResources .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#studyResources .card .links a {
+  color: darkcyan;
+  letter-spacing: 1px;
+  transition: all 300ms ease;
+}
+#studyResources .card .links a:hover {
+  text-decoration: underline;
+  color: rgb(93, 241, 241);
+}
+#studyResources .card .links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+#studyResources .card span {
+  font-weight: 600;
+  color: #579ff6;
+}/*# sourceMappingURL=studyResources.css.map */

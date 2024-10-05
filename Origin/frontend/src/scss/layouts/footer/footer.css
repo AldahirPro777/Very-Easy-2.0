@@ -1,0 +1,30 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+#footer .frase {
+  font-size: 26px;
+  text-decoration: none;
+  color: #f8f9fa;
+  font-weight: 900;
+  cursor: none;
+}
+#footer .frase:hover {
+  color: #7b5bc7;
+}
+#footer .frase {
+  font-style: italic;
+}
+#footer .version {
+  background: linear-gradient(90deg, rgb(20, 152, 235) 1.64%, rgb(150, 45, 227) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=footer.css.map */
