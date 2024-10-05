@@ -72,6 +72,7 @@ function Dashboard() {
           <p>Cargando datos del usuario...</p>
         )}
       </main>
+      
     </div>
   );
 }

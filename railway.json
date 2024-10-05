@@ -1,0 +1,11 @@
+{
+  "build": {
+    "frontend": {
+      "directory": "frontend"
+    },
+    "backend": {
+      "directory": "backend",
+      "startCommand": "npm start"
+    }
+  }
+}
