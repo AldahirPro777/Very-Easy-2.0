@@ -70,4 +70,4 @@ const examSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Exam", examSchema);
+module.exports = mongoose.model("Exams", examSchema);

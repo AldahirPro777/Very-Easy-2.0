@@ -13,4 +13,4 @@ var projectSchema = new mongoose.Schema({
   isFixed: Boolean,
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.model("Projects", projectSchema);
