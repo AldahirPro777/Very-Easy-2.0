@@ -1,16 +1,16 @@
-const Exam = require("../models/Cards of Works/examModel.js");
-const Task = require("../models/Cards of Works/taskModel.js");
-const Project = require("../models/Cards of Works/projectModel.js");
+const Exams = require("../models/Cards of Works/examModel.js");
+const Tasks = require("../models/Cards of Works/taskModel.js");
+const Projects = require("../models/Cards of Works/projectModel.js");
 const sendMessageErrorServer = require("../utils/sendMessageErrorServer.js");
 
 exports.allCards = async (req, res) => {
   try {
-    const exams = await Exam.find();
-    const tasks = await Task.find();
-    const projects = await Project.find();
+    const exams = await Exams.find();
+    const tasks = await Tasks.find();
+    const projects = await Projects.find();
 
     res.json({ exams, tasks, projects });
   } catch (err) {
-    sendMessageErrorServer(res,err);
+    sendMessageErrorServer(res, err);
   }
 };

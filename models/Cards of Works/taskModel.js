@@ -13,4 +13,4 @@ var taskSchema = new mongoose.Schema({
   isFixed: Boolean,
 });
 
-module.exports = mongoose.model("Task", taskSchema);
+module.exports = mongoose.model("Tasks", taskSchema);

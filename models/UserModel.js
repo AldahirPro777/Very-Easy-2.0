@@ -1,10 +1,5 @@
 const mongoose = require("mongoose");
 
-const accessibilitySchema = new mongoose.Schema({
-  fontSize: { type: String, default: "medium" },
-  theme: { type: Boolean, default: true },
-});
-
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   userName: {
@@ -15,6 +10,7 @@ const userSchema = new mongoose.Schema({
   },
   password: { type: String, required: true },
   genero: { type: Boolean, required: true },
+  isAdmin: { type: String, default: false },
 
   birthDate: Date,
   studentId: String,
@@ -24,7 +20,7 @@ const userSchema = new mongoose.Schema({
   status: String,
   tags: { type: [String], default: [] },
   logros: { type: [String], default: [] },
-  accessibility: { type: accessibilitySchema, default: () => ({}) },
+  theme: { type: Boolean, default: true },
 });
 
 // Middleware para actualizar la fecha de modificación

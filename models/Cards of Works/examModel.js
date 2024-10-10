@@ -1,16 +1,73 @@
 const mongoose = require("mongoose");
 
-const examSchema = new mongoose.Schema({
-  title: String,
-  materia: String,
-  date: Date,
+// Enumeración para los niveles de importancia
+const importanceLevels = ["bajo", "medio", "alto"];
 
-  teacher: String,
-  resourceUrls: [String],
-  importanceLevel: String,
-  tags: [String],
-  studyGuideUrls: [String],
-  isFixed: Boolean,
-});
+const examSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true, // El título es obligatorio
+      trim: true, // Eliminar espacios en blanco al inicio y final
+    },
+    materia: {
+      type: String,
+      required: true, // La materia es obligatoria
+      trim: true,
+    },
+    date: {
+      type: Date,
+      required: true, // La fecha es obligatoria
+      validate: {
+        validator: function (v) {
+          return v > Date.now(); // Asegura que la fecha sea futura
+        },
+        message: (props) =>
+          `${props.value} no es una fecha válida, debe ser en el futuro!`,
+      },
+    },
+    teacher: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    resourceUrls: {
+      type: [String],
+      validate: {
+        validator: function (v) {
+          return v.every((url) => /^https?:\/\//.test(url)); // Validar que cada URL comience con http o https
+        },
+        message: (props) => `${props.value} no es una URL válida!`,
+      },
+      default: [], // Por defecto, es un arreglo vacío
+    },
+    importanceLevel: {
+      type: String,
+      enum: importanceLevels, // Restringir a valores definidos en la enumeración
+      default: "medio", // Valor predeterminado
+    },
+    tags: {
+      type: [String],
+      default: [], // Por defecto, es un arreglo vacío
+    },
+    studyGuideUrls: {
+      type: [String],
+      validate: {
+        validator: function (v) {
+          return v.every((url) => /^https?:\/\//.test(url)); // Validar que cada URL comience con http o https
+        },
+        message: (props) => `${props.value} no es una URL válida!`,
+      },
+      default: [], // Por defecto, es un arreglo vacío
+    },
+    isFixed: {
+      type: Boolean,
+      default: false, // Por defecto, no está fijado
+    },
+  },
+  {
+    timestamps: true, // Agrega createdAt y updatedAt
+  }
+);
 
 module.exports = mongoose.model("Exam", examSchema);
