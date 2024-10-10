@@ -13,7 +13,11 @@ const connectDB = require("./config/db.js");
 const app = express();
 
 //* Middlewares
-app.use(cors({ origin: process.env.FRONTEND_URL }));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+  })
+);
 app.use(express.json());
 
 //* Rutas
