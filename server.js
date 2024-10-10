@@ -28,7 +28,7 @@ app.use("/api/studyResources", routesStudyResources);
 //* Conexión a la base de datos
 connectDB();
 
-const PORT = 7516;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Server Running On PORT ${PORT}`);
