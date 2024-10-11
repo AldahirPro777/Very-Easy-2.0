@@ -27,18 +27,18 @@ app.use("/api/users", routesUsers);
 app.use("/api/dashboard", routesDashboard);
 app.use("/api/studyResources", routesStudyResources);
 
-//* Servir archivos estáticos de la carpeta 'build'
-app.use(express.static(path.join(__dirname, "build")));
+//* Servir archivos estáticos de la carpeta 'dist'
+app.use(express.static(path.join(__dirname, "dist")));
 
 //* Redirigir todas las solicitudes no coincidentes al index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 //* Conexión a la base de datos
 connectDB();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 7516;
 
 app.listen(PORT, () => {
   console.log(`Server Running On PORT ${PORT}`);
