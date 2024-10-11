@@ -4,7 +4,7 @@ var taskSchema = new mongoose.Schema({
   title: String,
   descripcion: String,
   materia: String,
-  date: Date,
+  date: String,
 
   teacher: String,
   resourceUrls: [String],

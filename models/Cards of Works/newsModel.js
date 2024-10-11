@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const newsSchema = new mongoose.Schema({
   title: String,
-  date: Date,
+  date: String,
   autor: String,
   /* imagen: String, */
   description: String,

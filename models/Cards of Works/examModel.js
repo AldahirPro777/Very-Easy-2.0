@@ -16,15 +16,8 @@ const examSchema = new mongoose.Schema(
       trim: true,
     },
     date: {
-      type: Date,
-      required: true, // La fecha es obligatoria
-      validate: {
-        validator: function (v) {
-          return v > Date.now(); // Asegura que la fecha sea futura
-        },
-        message: (props) =>
-          `${props.value} no es una fecha válida, debe ser en el futuro!`,
-      },
+      type: String,
+      required: true,
     },
     teacher: {
       type: String,
