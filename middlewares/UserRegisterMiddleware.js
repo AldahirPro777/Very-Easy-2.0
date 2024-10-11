@@ -6,6 +6,7 @@ const UserRegisterMiddleware = (req, res, next) => {
   if (!name) return sendError(400, "Ingresa tu nombre", res);
   if (!userName) return sendError(400, "Ingresa tu nombre de usuario", res);
   if (!password) return sendError(400, "Ingresa la contraseña", res);
+  if (!password2) return sendError(400, "Repite la contraseña", res);
   if (genero === null) return sendError(400, "Selecciona tu género", res);
 
   // Verificaciones de longitud
