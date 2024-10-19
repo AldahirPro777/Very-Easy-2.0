@@ -13,10 +13,12 @@ const connectDB = require("./config/db.js");
 
 const app = express();
 
+const originVar = process.env.FRONTEND_URL || process.env.FRONTEND_URL_DEV;
+
 //* Middlewares
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: originVar,
   })
 );
 app.use(express.json());
@@ -26,14 +28,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", routesUsers);
 app.use("/api/dashboard", routesDashboard);
 app.use("/api/studyResources", routesStudyResources);
-
-//* Servir archivos estáticos de la carpeta 'dist'
-app.use(express.static(path.join(__dirname, "dist")));
-
-//* Redirigir todas las solicitudes no coincidentes al index.html
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
 
 //* Conexión a la base de datos
 connectDB();
