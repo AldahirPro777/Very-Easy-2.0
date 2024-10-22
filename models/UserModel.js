@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
   genero: { type: Boolean, required: true },
 
   isAdmin: { type: Boolean, default: false },
+  isSuperAdmin: { type: Boolean, default: false },
   birthDate: Date,
   studentId: String,
   favoriteColor: String,

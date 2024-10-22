@@ -3,13 +3,9 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 
-dotenv.config();
-
-const routesUsers = require("./routes/users.routes.js");
-const routesDashboard = require("./routes/dashboard.routes.js");
-const routesStudyResources = require("./routes/studyResources.routes.js");
-
+const setupRoutes = require("./config/routes.routes.js");
 const connectDB = require("./config/db.js");
+dotenv.config();
 
 const app = express();
 
@@ -24,10 +20,8 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//* Rutas de API
-app.use("/api/users", routesUsers);
-app.use("/api/dashboard", routesDashboard);
-app.use("/api/studyResources", routesStudyResources);
+//* Rutas
+setupRoutes(app);
 
 //* Conexión a la base de datos
 connectDB();

@@ -1,16 +1,47 @@
 const mongoose = require("mongoose");
 
-var taskSchema = new mongoose.Schema({
-  title: String,
-  descripcion: String,
-  materia: String,
-  date: String,
+const taskSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      trim: true, //* Elimina espacios al inicio y al final
+    },
+    descripcion: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    materia: {
+      type: String,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+    teacher: {
+      type: String,
+      required: true,
+    },
+    importanceLevel: {
+      type: String,
+      required: true,
+    },
+    isFixed: {
+      type: Boolean,
+      default: false,
+    },
 
-  teacher: String,
-  resourceUrls: [String],
-  importanceLevel: String,
-  tags: [String],
-  isFixed: Boolean,
-});
+    //! Pendiente
+    /* by: {
+      type: String,
+      required: true,
+    }, */
+  },
+  {
+    timestamps: true, //* Añade createdAt y updatedAt automáticamente
+  }
+);
 
-module.exports = mongoose.model("Tasks", taskSchema);
+module.exports = mongoose.model("Task", taskSchema);

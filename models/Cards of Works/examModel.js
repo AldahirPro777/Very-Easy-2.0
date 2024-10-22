@@ -1,19 +1,15 @@
 const mongoose = require("mongoose");
 
-// Enumeración para los niveles de importancia
-const importanceLevels = ["bajo", "medio", "alto"];
-
 const examSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true, // El título es obligatorio
-      trim: true, // Eliminar espacios en blanco al inicio y final
+      required: true,
+      trim: true,
     },
     materia: {
       type: String,
-      required: true, // La materia es obligatoria
-      trim: true,
+      required: true,
     },
     date: {
       type: String,
@@ -22,44 +18,39 @@ const examSchema = new mongoose.Schema(
     teacher: {
       type: String,
       required: true,
-      trim: true,
     },
     resourceUrls: {
       type: [String],
       validate: {
         validator: function (v) {
-          return v.every((url) => /^https?:\/\//.test(url)); // Validar que cada URL comience con http o https
+          return v.every((url) => /^https?:\/\//.test(url));
         },
         message: (props) => `${props.value} no es una URL válida!`,
       },
-      default: [], // Por defecto, es un arreglo vacío
+      default: [],
     },
-    importanceLevel: {
-      type: String,
-      enum: importanceLevels, // Restringir a valores definidos en la enumeración
-      default: "medio", // Valor predeterminado
-    },
+    importanceLevel: String,
     tags: {
       type: [String],
-      default: [], // Por defecto, es un arreglo vacío
+      default: [],
     },
     studyGuideUrls: {
       type: [String],
       validate: {
         validator: function (v) {
-          return v.every((url) => /^https?:\/\//.test(url)); // Validar que cada URL comience con http o https
+          return v.every((url) => /^https?:\/\//.test(url));
         },
         message: (props) => `${props.value} no es una URL válida!`,
       },
-      default: [], // Por defecto, es un arreglo vacío
+      default: [],
     },
     isFixed: {
       type: Boolean,
-      default: false, // Por defecto, no está fijado
+      default: false,
     },
   },
   {
-    timestamps: true, // Agrega createdAt y updatedAt
+    timestamps: true,
   }
 );
 
