@@ -2,23 +2,10 @@ const mongoose = require("mongoose");
 
 const examSchema = new mongoose.Schema(
   {
-    title: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    materia: {
-      type: String,
-      required: true,
-    },
-    date: {
-      type: String,
-      required: true,
-    },
-    teacher: {
-      type: String,
-      required: true,
-    },
+    title: { type: String, required: true, trim: true },
+    materia: { type: String, required: true },
+    date: { type: String, required: true },
+    teacher: { type: String, required: true },
     resourceUrls: {
       type: [String],
       validate: {
@@ -44,10 +31,7 @@ const examSchema = new mongoose.Schema(
       },
       default: [],
     },
-    isFixed: {
-      type: Boolean,
-      default: false,
-    },
+    isFixed: { type: Boolean, default: false },
   },
   {
     timestamps: true,
